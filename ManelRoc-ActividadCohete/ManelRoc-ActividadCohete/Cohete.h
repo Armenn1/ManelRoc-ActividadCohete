@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Capsula.h"
 using namespace std;
 #pragma once
 
@@ -9,14 +10,15 @@ using namespace std;
 
 class Cohete
 {
-	
-protected:
+protected:  
 	int id;
+	int destino[10][10];
+	int distancia;
+	Capsula* compartimento[10];
+	int cantidadCapsulas;
 
-
-	
 public:
-	AgregarCap();
+	void AgregarCap();
 	EliminarCap();
 	TransferirCap();
 	ValidarViaje();

@@ -123,11 +123,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Capsula.cpp" />
     <ClCompile Include="Cohete.cpp" />
     <ClCompile Include="ManelRoc-ActividadCohete.cpp" />
     <ClCompile Include="MapController.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Capsula.h" />
     <ClInclude Include="Cohete.h" />
     <ClInclude Include="MapController.h" />
   </ItemGroup>
