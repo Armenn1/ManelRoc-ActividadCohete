@@ -12,14 +12,14 @@ class Cohete
 {
 protected:  
 	int id;
-	int destino[10][10];
+	int destino;
 	int distancia;
 	Capsula* compartimento[10];
 	int cantidadCapsulas;
 
 public:
 	Cohete();
-	Cohete(int _id, int _destino[10][10], int _distancia);
+	Cohete(int _id, int _destino, int _distancia, int _cantidadCapsulas);
 	void AgregarCap(int posC);
 	void EliminarCap(int posC);
 	// TransferirCap

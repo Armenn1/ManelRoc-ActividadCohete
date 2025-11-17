@@ -3,21 +3,28 @@
 Cohete::Cohete()
 {
 	id = 0;
-	int destino[10][10] = { 0,0 };
-	distancia = 0;
 	
+	destino = 0;
+	distancia = 0;
+	cantidadCapsulas = 0;
 	for (int i = 0; i < 10; i++)
 	{
-		 compartimento[i] = 0;
+		 compartimento[i] = new Capsula(10000);
 	}
 
 }
 
-Cohete::Cohete(int _id, int _destino[10][10], int _distancia)
+Cohete::Cohete(int _id, int _destino, int _distancia, int _cantidadCapsulas)
 {
 	id = _id;
-	destino[10][10] = _destino[10][10];
+	destino = _destino;
 	distancia = _distancia;
+	cantidadCapsulas = _cantidadCapsulas;
+
+	for (int i = 0; i < 10; i++)
+	{
+		compartimento[i] = 0;
+	}
 }
 
 void Cohete::AgregarCap(int posC)
