@@ -18,11 +18,13 @@ protected:
 	int cantidadCapsulas;
 
 public:
-	void AgregarCap();
-	EliminarCap();
-	TransferirCap();
-	ValidarViaje();
-	Viajar();
-	Cargar();
+	Cohete();
+	Cohete(int _id, int _destino[10][10], int _distancia);
+	void AgregarCap(int posC);
+	void EliminarCap(int posC);
+	// TransferirCap
+	// ValidarViaje
+	// Viajar
+	// Cargar
 };
 

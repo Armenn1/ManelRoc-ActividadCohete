@@ -1,6 +1,6 @@
-#include "Cohete.h"
+#include "MapController.h"
 
 int main()
 {
-	std::cout << "Hello World!\n";
+	// Llamamos únicamente al gestor de cohetes (MapController).
 }
