@@ -1,12 +1,16 @@
 #pragma once
-class Capsula
-{
-private:
-	int energiaActual; // KWh	
-public:
-	Capsula(int capacidad);
-	int getEnergiaActual();
-	void consumirEnergia(int cantidad);
-	void recargarEnergia(int cantidad);
-};
 
+class Capsula {
+private:
+    int energiaActual;
+    int capacidadMaxima;
+
+public:
+    Capsula(int capacidadMax = 100);
+    ~Capsula();
+
+    int getEnergiaActual();
+    int getCapacidadMaxima();
+    void setEnergiaActual(int energia);
+    int inyectarEnergia(int cantidad);
+};
